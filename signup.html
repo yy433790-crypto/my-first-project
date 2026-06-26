@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MovieHub Sign Up</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="login-page">
+
+<div class="login-container">
+
+<div class="login-card">
+
+<h1>🎬 MovieHub</h1>
+
+<p class="subtitle">
+Create Your Account
+</p>
+
+<input
+type="text"
+id="name"
+placeholder="Full Name">
+
+<input
+type="email"
+id="email"
+placeholder="Email Address">
+
+<div class="password-box">
+
+<input
+type="password"
+id="password"
+placeholder="Password">
+
+<label>
+
+<div class="show-password-box">
+
+<label>
+
+<input
+type="checkbox"
+onclick="showSignupPassword()">
+
+<span>Show Password</span>
+
+</label>
+
+</div>
+
+<i
+class="fa-solid fa-eye"
+onclick="toggleSignupPassword()">
+</i>
+
+</div>
+
+<div class="password-box">
+
+<input
+type="password"
+id="confirmPassword"
+placeholder="Confirm Password">
+<div class="show-password-box">
+
+<label>
+
+<input
+type="checkbox"
+onclick="showSignupPassword()">
+
+<span>Show Password</span>
+
+</label>
+
+</div>
+
+
+<i
+class="fa-solid fa-eye"
+onclick="toggleConfirmPassword()">
+</i>
+
+</div>
+
+<button
+onclick="signup()"
+class="login-btn">
+
+Create Account
+
+</button>
+
+<div class="divider">
+</div>
+
+<button
+onclick="googleLogin()"
+class="google-btn">
+
+<img
+src="images/google.png"
+width="20">
+
+Continue with Google
+
+</button>
+
+<p class="signup-text">
+
+Already have an account?
+
+<a href="login.html">
+Login
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+<script src="js/auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+<script src="js/firebase.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>

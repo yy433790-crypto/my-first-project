@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Watch Movie</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body style="background:black;">
+
+
+<h1 style="padding:20px;">
+Now Playing:
+<span id="title"></span>
+</h1>
+
+
+<video
+id="player"
+width="100%"
+controls
+autoplay>
+
+
+</video>
+
+
+
+<script>
+
+
+document.getElementById("title").innerText =
+localStorage.getItem("movieTitle");
+
+
+
+document.getElementById("player").src =
+localStorage.getItem("movieVideo");
+
+
+</script>
+
+
+</body>
+
+</html>

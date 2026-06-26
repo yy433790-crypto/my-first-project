@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Movie Details</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="details-container">
+
+
+<img
+id="movieImage"
+class="details-poster">
+
+
+
+<div class="details-content">
+
+
+<h1 id="movieTitle"></h1>
+
+
+<p id="movieDescription"></p>
+
+
+
+<button onclick="addToList()">
+
+❤️ My List
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- VIDEO BELOW DETAILS -->
+
+
+<div class="movie-player">
+
+
+<h2>
+Watch Movie
+</h2>
+
+
+<video
+id="movieVideo"
+controls
+width="90%">
+</video>    
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+document.getElementById(
+"movieTitle"
+).innerText =
+localStorage.getItem("movieTitle");
+
+
+
+document.getElementById(
+"movieDescription"
+).innerText =
+localStorage.getItem("movieDescription");
+
+
+
+document.getElementById(
+"movieImage"
+).src =
+localStorage.getItem("movieImage");
+
+
+
+
+document.getElementById(
+"movieVideo"
+).src =
+localStorage.getItem("movieVideo");
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
